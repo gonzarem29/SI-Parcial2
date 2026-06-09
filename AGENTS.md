@@ -17,6 +17,15 @@ Repositorio de materiales de estudio para el segundo parcial de **Seguridad Indu
 | `brandkit.config.yaml` | Configuración BrandKit |
 | `brand_atomic_system/` | Sistema de diseño atómico |
 | `assets/*.svg` | 6 SVGs generados con Nakkas (hazard-stripe, scanline, grid-bg, telemetry-line, led-dot, frame-corners) |
+| `.gitignore` | Exclusiones: `.opencode/`, `screenshots/`, `temp_*`, `package*.json`, `node_modules/` |
+
+## GitHub
+
+| | |
+|---|----|
+| Repo | `github.com/gonzarem29/SI-Parcial2` |
+| Pages | `https://gonzarem29.github.io/SI-Parcial2/` |
+| Branch | `main`, deploy desde `/ (root)` |
 
 ## MCPs configurados
 
@@ -59,10 +68,11 @@ Ver `.opencode.json`:
 - Telemetry dividers actualizados con waveform realista
 - Frame corners overlay en hero panel
 - Timing boot overlay ajustado
+- Playwright: 45 screenshots (5 viewports × 9 captures) + 20 tests de interacción
+- GitHub: repo creado + push a `main` + Pages configurado
 
-### Pendiente
-- Playwright: screenshots en viewports y tests de interacción
-- Pumpking de contenido con detalles adicionales de NotebookLM (opcional)
+### Pendiente (opcional)
+- Pumpking de contenido con detalles adicionales de NotebookLM
 
 ## Convenciones
 
