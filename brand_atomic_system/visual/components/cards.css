@@ -1,0 +1,41 @@
+.panel {
+  background: var(--screen-bg);
+  border: var(--bezel-width) solid var(--bezel-dark);
+  border-radius: var(--radius);
+  box-shadow: var(--panel-shadow);
+  position: relative;
+  overflow: hidden;
+}
+.panel::before {
+  content: '';
+  position: absolute;
+  inset: var(--bezel-width);
+  border-radius: calc(var(--radius) - var(--bezel-width));
+  border: 1px solid var(--bezel-light);
+  pointer-events: none;
+  z-index: 1;
+}
+.panel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.08) 2px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+}
+.panel-screen {
+  position: relative;
+  z-index: 1;
+  padding: 1.25rem 1.5rem;
+}
+.panel:hover {
+  border-color: var(--bezel-light);
+  box-shadow: var(--panel-shadow), 0 0 0 1px rgba(59, 130, 246, 0.08);
+}

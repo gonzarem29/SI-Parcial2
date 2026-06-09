@@ -1,0 +1,6 @@
+version: 2
+brand:
+  name: SI-Parcial 2 · Control Room
+  description: Página de estudio interactiva para Seguridad Industrial — estética Sala de Control Industrial (SCADA/HMI) con paneles CRT, indicadores LED y telemetría
+  root: ./brand_atomic_system
+contexts: [base, web]

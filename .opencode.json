@@ -1,0 +1,38 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "notebooklm": {
+      "type": "local",
+      "command": ["npx", "-y", "notebooklm-mcp@latest"],
+      "enabled": true,
+      "environment": {
+        "NOTEBOOKLM_PROFILE": "standard"
+      }
+    },
+    "markitdown": {
+      "type": "local",
+      "command": ["markitdown-mcp"],
+      "enabled": true
+    },
+    "nakkas": {
+      "type": "local",
+      "command": ["npx", "-y", "nakkas@latest"],
+      "enabled": true
+    },
+    "playwright": {
+      "type": "local",
+      "command": ["npx", "-y", "@playwright/mcp@latest"],
+      "enabled": true
+    },
+    "aesthetics-wiki": {
+      "type": "local",
+      "command": ["uvx", "aesthetics-wiki-mcp@latest"],
+      "enabled": true
+    },
+    "brandkit": {
+      "type": "local",
+      "command": ["npx", "-y", "brandkit-mcp@latest", "serve", "--config", "brandkit.config.yaml"],
+      "enabled": true
+    }
+  }
+}

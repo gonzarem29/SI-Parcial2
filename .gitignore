@@ -1,0 +1,7 @@
+.opencode/
+screenshots/
+screenshots.mjs
+temp_*.txt
+package.json
+package-lock.json
+node_modules/
